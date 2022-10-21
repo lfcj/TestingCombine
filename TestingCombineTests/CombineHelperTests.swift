@@ -82,7 +82,7 @@ final class CombineHelperTests: XCTestCase {
             }
         ).store(in: &cancellables)
         
-        wait(for: [exp], timeout: 3)
+        wait(for: [exp], timeout: 10)
         return expectedData
     }
 
