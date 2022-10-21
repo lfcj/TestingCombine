@@ -71,26 +71,18 @@ final class CombineHelperTests: XCTestCase {
     }
 
     func waitForPublication(on publisher: AnyPublisher<Data, Error>) -> Data? {
-        var exp: XCTestExpectation? = expectation(description: "Wait for publisher")
+        let exp = expectation(description: "Wait for publisher")
         var expectedData: Data?
         publisher.sink(
             receiveCompletion: { completion in
-                switch completion {
-                case .failure(let error):
-                    XCTFail("Failed with error: \(error)")
-                    exp?.fulfill()
-                    exp = nil
-                case .finished:
-                    exp?.fulfill()
-                    exp = nil
-                }
+                exp.fulfill()
             },
             receiveValue: { receivedData in
                 expectedData = receivedData
             }
         ).store(in: &cancellables)
         
-        wait(for: [exp!], timeout: 3)
+        wait(for: [exp], timeout: 3)
         return expectedData
     }
 
@@ -109,3 +101,4 @@ final class CombineHelperTests: XCTestCase {
 
 
 }
+
