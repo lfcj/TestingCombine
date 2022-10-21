@@ -13,20 +13,11 @@
 		402E54D22902B03D00F04BDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402E54D02902B03D00F04BDC /* Main.storyboard */; };
 		402E54D42902B03E00F04BDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 402E54D32902B03E00F04BDC /* Assets.xcassets */; };
 		402E54D72902B03E00F04BDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402E54D52902B03E00F04BDC /* LaunchScreen.storyboard */; };
-		402E54E22902B03E00F04BDC /* TestingCombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402E54E12902B03E00F04BDC /* TestingCombineTests.swift */; };
-		402E54EC2902B03E00F04BDC /* TestingCombineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402E54EB2902B03E00F04BDC /* TestingCombineUITests.swift */; };
-		402E54EE2902B03E00F04BDC /* TestingCombineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402E54ED2902B03E00F04BDC /* TestingCombineUITestsLaunchTests.swift */; };
+		402E54E22902B03E00F04BDC /* CombineHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402E54E12902B03E00F04BDC /* CombineHelperTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		402E54DE2902B03E00F04BDC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 402E54BF2902B03D00F04BDC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 402E54C62902B03D00F04BDC;
-			remoteInfo = TestingCombine;
-		};
-		402E54E82902B03E00F04BDC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 402E54BF2902B03D00F04BDC /* Project object */;
 			proxyType = 1;
@@ -45,10 +36,7 @@
 		402E54D62902B03E00F04BDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		402E54D82902B03E00F04BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		402E54DD2902B03E00F04BDC /* TestingCombineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingCombineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		402E54E12902B03E00F04BDC /* TestingCombineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingCombineTests.swift; sourceTree = "<group>"; };
-		402E54E72902B03E00F04BDC /* TestingCombineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingCombineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		402E54EB2902B03E00F04BDC /* TestingCombineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingCombineUITests.swift; sourceTree = "<group>"; };
-		402E54ED2902B03E00F04BDC /* TestingCombineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingCombineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		402E54E12902B03E00F04BDC /* CombineHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +54,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		402E54E42902B03E00F04BDC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +62,6 @@
 			children = (
 				402E54C92902B03D00F04BDC /* TestingCombine */,
 				402E54E02902B03E00F04BDC /* TestingCombineTests */,
-				402E54EA2902B03E00F04BDC /* TestingCombineUITests */,
 				402E54C82902B03D00F04BDC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +71,6 @@
 			children = (
 				402E54C72902B03D00F04BDC /* TestingCombine.app */,
 				402E54DD2902B03E00F04BDC /* TestingCombineTests.xctest */,
-				402E54E72902B03E00F04BDC /* TestingCombineUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,18 +92,9 @@
 		402E54E02902B03E00F04BDC /* TestingCombineTests */ = {
 			isa = PBXGroup;
 			children = (
-				402E54E12902B03E00F04BDC /* TestingCombineTests.swift */,
+				402E54E12902B03E00F04BDC /* CombineHelperTests.swift */,
 			);
 			path = TestingCombineTests;
-			sourceTree = "<group>";
-		};
-		402E54EA2902B03E00F04BDC /* TestingCombineUITests */ = {
-			isa = PBXGroup;
-			children = (
-				402E54EB2902B03E00F04BDC /* TestingCombineUITests.swift */,
-				402E54ED2902B03E00F04BDC /* TestingCombineUITestsLaunchTests.swift */,
-			);
-			path = TestingCombineUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +135,6 @@
 			productReference = 402E54DD2902B03E00F04BDC /* TestingCombineTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		402E54E62902B03E00F04BDC /* TestingCombineUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 402E54F72902B03E00F04BDC /* Build configuration list for PBXNativeTarget "TestingCombineUITests" */;
-			buildPhases = (
-				402E54E32902B03E00F04BDC /* Sources */,
-				402E54E42902B03E00F04BDC /* Frameworks */,
-				402E54E52902B03E00F04BDC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				402E54E92902B03E00F04BDC /* PBXTargetDependency */,
-			);
-			name = TestingCombineUITests;
-			productName = TestingCombineUITests;
-			productReference = 402E54E72902B03E00F04BDC /* TestingCombineUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +149,6 @@
 						CreatedOnToolsVersion = 14.0.1;
 					};
 					402E54DC2902B03E00F04BDC = {
-						CreatedOnToolsVersion = 14.0.1;
-						TestTargetID = 402E54C62902B03D00F04BDC;
-					};
-					402E54E62902B03E00F04BDC = {
 						CreatedOnToolsVersion = 14.0.1;
 						TestTargetID = 402E54C62902B03D00F04BDC;
 					};
@@ -221,7 +169,6 @@
 			targets = (
 				402E54C62902B03D00F04BDC /* TestingCombine */,
 				402E54DC2902B03E00F04BDC /* TestingCombineTests */,
-				402E54E62902B03E00F04BDC /* TestingCombineUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,13 +185,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		402E54DB2902B03E00F04BDC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		402E54E52902B03E00F04BDC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,16 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				402E54E22902B03E00F04BDC /* TestingCombineTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		402E54E32902B03E00F04BDC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				402E54EC2902B03E00F04BDC /* TestingCombineUITests.swift in Sources */,
-				402E54EE2902B03E00F04BDC /* TestingCombineUITestsLaunchTests.swift in Sources */,
+				402E54E22902B03E00F04BDC /* CombineHelperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,11 +219,6 @@
 			isa = PBXTargetDependency;
 			target = 402E54C62902B03D00F04BDC /* TestingCombine */;
 			targetProxy = 402E54DE2902B03E00F04BDC /* PBXContainerItemProxy */;
-		};
-		402E54E92902B03E00F04BDC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 402E54C62902B03D00F04BDC /* TestingCombine */;
-			targetProxy = 402E54E82902B03E00F04BDC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -522,40 +448,6 @@
 			};
 			name = Release;
 		};
-		402E54F82902B03E00F04BDC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.TestingCombineUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TestingCombine;
-			};
-			name = Debug;
-		};
-		402E54F92902B03E00F04BDC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.TestingCombineUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TestingCombine;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -582,15 +474,6 @@
 			buildConfigurations = (
 				402E54F52902B03E00F04BDC /* Debug */,
 				402E54F62902B03E00F04BDC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		402E54F72902B03E00F04BDC /* Build configuration list for PBXNativeTarget "TestingCombineUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				402E54F82902B03E00F04BDC /* Debug */,
-				402E54F92902B03E00F04BDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
